@@ -19,7 +19,6 @@ pipeline {
       }
       steps {
         sh './jenkins/scripts/test.sh'
-        input(message: 'Finished using the web site?', id: '777', ok: 'ok_param', submitter: 'sub_param', submitterParameter: 'SubParam_param')
       }
     }
 
